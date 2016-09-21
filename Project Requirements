@@ -1,42 +1,24 @@
-    Language
-        Specify a language with the lang attribute on the <html> element on each .html page.
 
     Design
-        Ensure that the foreground text and background colors of your site have sufficient contrast. This will make your site more readable for everyone. Contrast Ratio is one tool for checking the contrast of your colors for both standard vision and color deficient user.
-
-    Document Structure
-        Ensure heading elements i.e. <h1> are used to provide hierarchical structure to page content.
-        Specifically look for the <p> tags with the class "heading" these should be changed to help assist screen readers.
-
-    Images
-        Text in banner area is part of the image and will not be picked up by screen readers. Use the background image without text (concert02_no_text.jpg) and add text to the HTML to roughly match the layout.
-        Add alt tags to images.
-        Make sure that the decorative images in tour.html have an empty alt attribute i.e alt="".
+        -- Ensure that the foreground text and background colors of your site have sufficient contrast. This will make your site more readable for everyone.
+        -- Contrast Ratio is one tool for checking the contrast of your colors for both standard vision and color deficient user.
 
     Links
-        Ensure links are visually distinct.
-        Add hover state to links.
-        Ensure the image link icons in the footer have accompanying text describing the link. However we don’t want to see this text on the page. Think about using alt text for the image or using css styling to hide text describing the image link.
 
-    Table
-        Create a table for the tour dates information using the <td> element for table data cells and the <th> element for table header cells.
-        Ensure your table has a scope and caption element.
+        -- Ensure the image link icons in the footer have accompanying text describing the link. However we don’t want to see this text on the page. Think about using alt text for the image or using css styling to hide text describing the image link.
 
     Form
-        Ensure form elements have styled focus states using the :focus pseudo class.
-        Add associated labels for form controls.
-        Make sure all labels have a ‘for’ value. Matching for and id values associate the label with the appropriate form control.
-        Group form elements with a fieldset.
-        Add a legend to describe the grouping.
-        Ensure the select field options are in alphabetical order.
-        Make sure you can select options in the drop-down menu by typing from the keyboard.
+        -- Ensure form elements have styled focus states using the :focus pseudo class.
+        -- Ensure the select field options are in alphabetical order.
+        -- Make sure you can select options in the drop-down menu by typing from the keyboard.
 
     Checking your code:
-        Check your code using the Chrome Accessibility extension and the Fangs extension for Firefox.
-        You can also copy and paste your HTML into the Accessibility Validator (see the Project Resources section for link).
-        You will also need to check your code against the Accessibility Checklist (see the Project Resources section for link).
-        Make sure to check your code is valid by running it through an HTML and CSS validator.
-        Links to the validators can be found in the Project Resources. This will help you spot any errors that might be in your code.
+        -- Check your code using the Chrome Accessibility extension and the Fangs extension for Firefox.
+        -- You can also copy and paste your HTML into the Accessibility Validator (see the Project Resources section for link).
+        -- You will also need to check your code against the Accessibility Checklist (see the Project Resources section for link).
+        -- Make sure to check your code is valid by running it through an HTML and CSS validator.
+        -- Links to the validators can be found in the Project Resources. This will help you spot any errors that might be in your code.
+
         There are a few exceptions that you don’t need to fix:
         Don’t worry about any warnings, we just need you to check any errors that might be there.
         If CSS validator flags use of calc, vendor prefixes or pseudo-elements/pseudo-classes these errors should be ignored.
@@ -44,8 +26,7 @@
 
     NOTE:
 
-        A good practice is to check your project for cross browser compatibility. Making sure that it
-        looks and functions correctly in multiple (at least three) browsers is an important part of being a top-notch developer. If you want, leave a comment to the project reviewer about which browser(s) the project was checked to ensure they are seeing things as you have designed them.
+        A good practice is to check your project for cross browser compatibility. Making sure that it looks and functions correctly in multiple (at least three) browsers is an important part of being a top-notch developer. If you want, leave a comment to the project reviewer about which browser(s) the project was checked to ensure they are seeing things as you have designed them.
         Some browser options:
         Google Chrome
         Mozilla Firefox

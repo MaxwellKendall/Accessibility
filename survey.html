@@ -1,9 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
-    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <title>Accessible Frog</title>
@@ -18,53 +17,77 @@
       </ul>
     </div>
 
-    <header>
+    <header role="banner">
+        <h1>Accessible Frog</h1>
+        <h2>We Make Awesome Music</h2>
     </header>
 
-    <main>
-      <p class= "heading">Survey</p>
+    <main role="main">
+      <h1 class= "heading">Survey</h1>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/concert01.jpg">
+          <img class="photo" src= "img/concert01.jpg" alt="An image of the fans enjoying a live show">
           <div class="container">
-            <form class = "survey">
-              <p>Who is your favorite band member:</p>
-              <input type="radio" name="res" value="John"> John
-              <input type="radio" name="res" value="Hazzard"> Hazzard
-              <input type="radio" name="res" value="Bob"> Bob
-              <input type="radio" name="res" value="Sally"> Sally
-
-              <p>What is your favorite album:</p>
+            <form role="search" class = "survey">
+            <fieldset>
+                <legend>Tell us your favorite band member, album and song</legend>
+            <div class="band-member">
+              <label class="question">Who is your favorite band member:</label>
+              <input type="radio" name="res" id="john" value="John">
+              <label for="john">John</label>
+              <input type="radio" name="res" id="hazzard"value="Hazzard">
+              <label for="hazzard">Hazzard</label>
+              <input type="radio" name="res" id="bob" value="Bob">
+              <label for="bob">Bob</label>
+              <input type="radio" name="res" id="sally" value="Sally">
+              <label for="sally">Sally</label>
+          </div>
+          <div class="album">
+              <label class="question" for="albums">What is your favorite album:</label>
               <select id="albums" name="select">
-                <option value="1">Party For An Angel</option>
-                <option value="2">A Day Of Old</option>
-                <option value="3">Finding My Shadow</option>
-                <option value="4">Diamond Fireworks</option>
-                <option value="5">Enjoy Your Desire</option>
-                <option value="6">This Is For You</option>
+                <option value="1">A Day Of Old</option>
+                <option value="2">Diamond Fireworks</option>
+                <option value="3">Enjoy Your Desire</option>
+                <option value="4">Finding My Shadow</option>
+                <option value="5">Heroic Forever</option>
+                <option value="6">Midnight Fires</option>
                 <option value="7">Music Of My Life</option>
-                <option value="8">Song For Yesterday</option>
-                <option value="9">Heroic Forever</option>
-                <option value="10">Midnight Fires</option>
-                <option value="11">Street Of The Rider</option>
+                <option value="8">Party For An Angel</option>
+                <option value="9">Song For Yesterday</option>
+                <option value="10">Street Of The Rider</option>
+                <option value="11">This Is For You</option>
               </select>
-
-              <p>What is your favorite song:</p>
-              <textarea></textarea>
+          </div>
+          <div class="song">
+              <label class="question" for="song">What is your favorite song:</label>
+              <textarea id="song"></textarea>
+          </div>
+              </fieldset>
             </form>
           </div>
         </div>
-      </div>
-      <p class= "heading">Newsletter</p>
+    </div>
+      <h1>Newsletter</h1>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/the_band.jpg">
+          <img class="photo" src= "img/the_band.jpg" alt="An image of the band playing live">
             <div class="container">
-              <form class="newsletter">
-                  <p>Name: <input type ="text" name="textfield"></p>
-                  <p>Email: <input type ="email" name="textfield"></p>
-                  <p>Retype Email: <input type ="email" name="textfield"></p>
+              <form role="search" class="newsletter">
+                  <fieldset>
+                      <legend>Provide your Name and Email to sign up for our newsletter</legend>
+                      <div class="">
+                      </div>
+                        <div class="name">
+                            <label class="info" for="name">Name:</label><input class="info-input" id="name" type ="text" name="textfield">
+                        </div>
+                        <div class="email">
+                            <label class="info" for="email">Email:</label><input class="info-input" id="email" type ="email" name="textfield">
+                        </div>
+                        <div class="email-2">
+                            <label class="info" for="confirm-email">Retype Email:</label><input class="info-input" id="confirm-email" type ="email" name="textfield">
+                        </div>
                   <button type="submit">Sign Up</button>
+                  </fieldset>
               </form>
             </div>
         </div>
@@ -73,9 +96,9 @@
 
     <footer>
       <ul>
-        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png"></a></li>
-        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png"></a></li>
-        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png"></a></li>
+        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Accessible Frog Twitter Page"></a></li>
+        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="Accessible Frog Youtube Channel"></a></li>
+        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="Accessible Frog Spotify Page"></a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>
