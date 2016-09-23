@@ -23,15 +23,15 @@
     </header>
 
     <main >
-      <div class="card">
+      <div class="card" aria-labelledby="calender" aria-describedby="description">
         <div class="flex">
         <!-- The following images are decorative for this project. -->
         <!-- Please see the project instructions for information on how to handle these. -->
           <img class="pick" src="img/guitar_pick.png" alt="">
           <h3 class="heading">Tour Dates</h3>
           <img class="pick" src="img/guitar_pick.png" alt="">
-          <table>
-                <caption>This table contains the Date, Venue, and Location for each upcoming show</caption>
+          <table id="calender">
+                <caption id="description">This table contains the Date, Venue, and Location for each upcoming show</caption>
                 <tr>
                     <th scope="col">Date</th>
                     <th scope="col">Venue</th>
@@ -62,11 +62,11 @@
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
-        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Accessible Frog Twitter Page"></a></li>
-        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="Accessible Frog Youtube Channel"></a></li>
-        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="Accessible Frog Spotify Page"></a></li>
+        <li><a id="twitter" href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Accessible Frog Twitter Page"></a></li>
+        <li><a id="youtube" href="#" class="social youtube"><img src= "img/youtube-32.png" alt="Accessible Frog Youtube Channel"></a></li>
+        <li><a id="music" href="#" class="social spotify"><img src= "img/spotify-32.png" alt="Accessible Frog Spotify Page"></a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>

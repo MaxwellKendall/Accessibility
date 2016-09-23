@@ -26,7 +26,7 @@ form {
   select {
       height: 100%;
       width: 100%;
-      font-size: 10em;
+      font-size: 2em;
   }
   .question {
       display: block;
@@ -56,7 +56,10 @@ form {
       background: white;
 
      &:focus {
-         background: orange;
+         background: gray;
+     }
+     &:hover {
+         background: gray;
      }
   }
   // .info-input {

@@ -173,6 +173,14 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+
+  ul {
+      display: flex;
+      justify-content: center;
+      li img {
+          align-self: center; 
+      }
+  }
 }
 
 footer .copyright {
@@ -209,17 +217,17 @@ a.social {
 
 }
 
-a.twitter {
-  background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-  background-image: url(../img/spotify-32.png);
-}
+// a.twitter {
+//   background-image: url(../img/twitter-32.png);
+// }
+//
+// a.youtube {
+//   background-image: url(../img/youtube-32.png);
+// }
+//
+// a.spotify {
+//   background-image: url(../img/spotify-32.png);
+// }
 
 a.social:hover {
   opacity: 1;

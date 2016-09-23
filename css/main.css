@@ -149,6 +149,11 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px; }
+  footer ul {
+    display: flex;
+    justify-content: center; }
+    footer ul li img {
+      align-self: center; }
 
 footer .copyright {
   top: -8px; }
@@ -176,15 +181,6 @@ a.social {
     color: black;
     transform: scale(1.3);
     transition: transform .5s ease-in; }
-
-a.twitter {
-  background-image: url(../img/twitter-32.png); }
-
-a.youtube {
-  background-image: url(../img/youtube-32.png); }
-
-a.spotify {
-  background-image: url(../img/spotify-32.png); }
 
 a.social:hover {
   opacity: 1; }
@@ -248,7 +244,7 @@ form {
   form select {
     height: 100%;
     width: 100%;
-    font-size: 10em; }
+    font-size: 2em; }
   form .question {
     display: block;
     margin: 1em 0; }
@@ -270,7 +266,9 @@ form {
     border-radius: 10px;
     background: white; }
     form button:focus {
-      background: orange; }
+      background: gray; }
+    form button:hover {
+      background: gray; }
   form p {
     color: black; }
 

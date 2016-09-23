@@ -22,20 +22,20 @@
         <h2>We Make Awesome Music</h2>
     </header>
 
-    <main role="main">
-      <h1 class= "heading">Survey</h1>
+    <main aria-labelledby="survey" aria-describedby="desc1 desc2 desc3" role="main">
+      <h1 id="survey" class= "heading">Survey</h1>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/concert01.jpg" alt="An image of the fans enjoying a live show">
+          <img class="photo" src="img/concert01.jpg" alt="An image of the fans enjoying a live show">
           <div class="container">
-            <form role="search" class = "survey">
+            <form role="search" class="survey">
             <fieldset>
-                <legend>Tell us your favorite band member, album and song</legend>
+                <legend id="desc1">Tell us your favorite band member, album and song</legend>
             <div class="band-member">
               <label class="question">Who is your favorite band member:</label>
               <input type="radio" name="res" id="john" value="John">
               <label for="john">John</label>
-              <input type="radio" name="res" id="hazzard"value="Hazzard">
+              <input type="radio" name="res" id="hazzard" value="Hazzard">
               <label for="hazzard">Hazzard</label>
               <input type="radio" name="res" id="bob" value="Bob">
               <label for="bob">Bob</label>
@@ -43,7 +43,7 @@
               <label for="sally">Sally</label>
           </div>
           <div class="album">
-              <label class="question" for="albums">What is your favorite album:</label>
+              <label id="desc2" class="question" for="albums">What is your favorite album:</label>
               <select id="albums" name="select">
                 <option value="1">A Day Of Old</option>
                 <option value="2">Diamond Fireworks</option>
@@ -59,7 +59,7 @@
               </select>
           </div>
           <div class="song">
-              <label class="question" for="song">What is your favorite song:</label>
+              <label id="desc3" class="question" for="song">What is your favorite song:</label>
               <textarea id="song"></textarea>
           </div>
               </fieldset>
@@ -94,7 +94,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Accessible Frog Twitter Page"></a></li>
         <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="Accessible Frog Youtube Channel"></a></li>
