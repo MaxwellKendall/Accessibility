@@ -1,0 +1,106 @@
+/* Survey page styles */
+
+.photo {
+  width: 60%;
+  padding: 10px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+  color: black;
+
+  textarea:focus {
+      border: .5em solid orange;
+  }
+  input:focus {
+      background: orange;
+  }
+  fieldset {
+      border: none;
+  }
+  legend {
+      display: none;
+  }
+  select {
+      height: 100%;
+      width: 100%;
+      font-size: 2em;
+  }
+  .question {
+      display: block;
+      margin: 1em 0;
+  }
+  .name,
+  .email,
+  .email-2 {
+      display: block;
+  }
+  .info {
+      display: inline-block;
+      margin-right: 1em;
+      width: 35%;
+  }
+
+  #song {
+      width: 100%;
+      height: 3em;
+  }
+
+  button {
+      width: 100%;
+      padding: 1em;
+      margin: .5em 0;
+      border-radius: 10px;
+      background: white;
+
+     &:focus {
+         background: gray;
+     }
+     &:hover {
+         background: gray;
+     }
+  }
+  // .info-input {
+  //     margin-: 45%;
+  // }
+  p {
+      color: black;
+  }
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  // text-align: right;
+
+}
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 3em 3em;
+  opacity: .4;
+  transition: all .5s;
+  background: black;
+  border-radius: .5em;
+  background-position: center;
+
+  &:hover,
+  &:focus {
+      color: black;
+      transform: scale(1.3);
+      transition: transform .5s ease-in;
+  }
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+  .photo {
+    width: 40%;
+  }
+}
